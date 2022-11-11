@@ -6,11 +6,10 @@ import 'aos/dist/aos.css';
 
 // import components
 import Hero from './components/Hero';
-import About from './components/About';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
-import CtaSection from './components/CtaSection';
-import Footer from './components/Footer';
+
+
 import Next from './components/Next';
 const App = () => {
   // animate on scroll initialization
@@ -23,10 +22,9 @@ const App = () => {
       <Hero />
       <Testimonials />
       <Next />
-      <About />
       <Features />
-      <CtaSection />
-      <Footer />
+
+
     </div>
   );
 };

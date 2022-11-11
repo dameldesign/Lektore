@@ -27,7 +27,7 @@ import Book from '../assets/img/creative-writing.jpg';
               <span class=" flex    text-white text-sm font-bold tracking-widest">3.00PM 15.00GMT</span>
               <span class=" flex  py-1 px-2  text-white text-sm font-bold tracking-widest">July 21-2022</span>
             </div>
-        <button class=" block text-center justify-center mt-[90px] pb-0 mb-0 py-0 px-7 rounded bg-indigo-50 text-black-800 text-sm font-bold ">Start Class</button>
+        <button class="text-center mt-[90px] mb-1 px-7 rounded bg-indigo-50 text-black-800 text-sm font-bold ">Start Class</button>
         </div>
         </div>
 

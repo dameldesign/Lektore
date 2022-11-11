@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
 // import components
-import Logo from '../assets/img/logo.png';
 import Nav from './Nav';
 import NavMobile from './NavMobile';
 
 // import icons
-import { FaBars } from 'react-icons/fa';
-import { BsArrowRight } from 'react-icons/bs';
+import { AiOutlineAlignRight } from 'react-icons/ai';
+import { MdNotificationAdd } from 'react-icons/md';
+
 
 const Header = () => {
   const [navMobile, setNavMobile] = useState(false);
@@ -23,13 +23,13 @@ const Header = () => {
           <div className='flex items-center gap-x-[120px]'>
             {/* logo */}
             <a href='#'>
-              {/* <img src={Logo} alt='' /> */}
               <h1 className='font-bold'>LEKTORE</h1>
             </a>
 
             {/* nav / initially hidden / show on large screens  */}
             <div className='hidden lg:flex'>
               <Nav />
+
             </div>
           </div>
 
@@ -41,10 +41,9 @@ const Header = () => {
           >
             <NavMobile />
           </div>
-
-          <button className='btn btn-quaternary flex items-center gap-x-[20px] group'>
-            Request Demo
-            <BsArrowRight className='text-2xl text-accent-primary group-hover:text-white transition' />
+          <div className=' flex items-center justify-end gap-5' >
+          <button className=' flex items-center justify-end'>
+            <MdNotificationAdd  className='text-3xl text-primary group-hover:text-blue transition' />
           </button>
 
           {/* nav trigger btn / only shows on mobile screens */}
@@ -52,8 +51,11 @@ const Header = () => {
             onClick={() => setNavMobile(!navMobile)}
             className='text-2xl text-primary cursor-pointer lg:hidden'
           >
-            <FaBars />
+            <AiOutlineAlignRight/>
           </div>
+
+          </div>
+
         </div>
       </div>
     </header>
