@@ -5,12 +5,12 @@ import Book from "../assets/img/creative-writing.jpg";
 const Next = () => {
   return (
     <section class=" text-gray-600 body-font overflow-hidden">
-      <div class=" pb-0 px-3 pt-10  mx-auto no-">
+      <div class=" pb-0 px-3 pt-10  mx-auto">
         <div className="flex items-center justify-between">
-          <h2 class=" font-semibold text-gray-900 mt-4 mb-4 text-base">
+          <h2 class=" font-semibold text-gray-900 mb-1  text-base">
             Next Class
           </h2>
-          <div className=" flex justify-end gap-2">
+          <div className=" flex justify-end gap-2 mb-1">
             <span class=" flex py-1 px-2 rounded bg-indigo-50 text-black-500 text-[13px] font-bold ">
               Assignment
             </span>
