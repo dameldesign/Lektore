@@ -66,7 +66,7 @@ export const featuresData = {
       title: 'Creative Writing',
       description:
         'Group 1 Class',
-      linkText: '32',
+      linkText: '32%',
     },
 
   ],

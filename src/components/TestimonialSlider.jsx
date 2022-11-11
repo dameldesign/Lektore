@@ -33,17 +33,17 @@ const TestimonialSlider = () => {
           // slide
           <SwiperSlide
             key={index}
-            className='bg-white flex flex-col flex-nowrap hover:bg-blue-800 hover:text-white  focus:text-white border w-10 border-accent-primary p-[12px]  items-center gap-x-[20px] shadow-xl'
+            className='bg-white flex flex-col flex-nowrap hover:bg-[#2e7dda] hover:text-white  focus:text-white max-h-[100px] max-w-[140px] border-accent-primary p-[12px] py-[6px] items-center gap-x-[20px] shadow-xl'
           >
             {/* avatar image */}
            <div className='flex flex-col text-3xl hover:text-white'> {icon}</div>
             {/* text */}
-              <div className=' text-primary font-bold  hover:text-white my-2 flex-nowrap '>{name}</div>
-              <div className='flex text-center justify-center'>
-              <div className=' font-bold text-[25px] text-black hover:text-white'>
+              <div className=' text-[12px] font-bold my-2 flex-nowrap '>{name}</div>
+              <div className='flex text-center gap-1 justify-center'>
+              <div className=' font-bold text-[15px] '>
                 {web}
               </div>
-              <p className=' mt-3.5 leading-none text-[14px] text-color[green] border-gray-200'>{message}</p>
+              <p className=' mt-2.5 leading-none text-[7px] text-color[green] border-gray-200'>{message}</p>
             </div>
           </SwiperSlide>
         );

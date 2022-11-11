@@ -10,63 +10,59 @@ const Features = () => {
   // destructure features data
   const { title, list } = featuresData;
   return (
-    <section className="my-[70px] xl:my-[150px]">
-      <div className="container mx-auto">
+    <section className="my-[70px] px-4 ">
+      <div className="mx-auto">
         {/* text */}
         <div className="flex items-center justify-between">
-          <h2 className="h2 mb-3 " data-aos="fade-down" data-aos-delay="100">
+          <h2 className="text-base mb-3  font-semibold" data-aos="fade-down" data-aos-delay="100">
             {title}
           </h2>
           <BsPencilSquare className='text-3xl text-blue-primary group-hover:ml-[5px] transition-all' />
         </div>
         {/* feature list */}
-        <div className="grid grid-cols-1 gap-[50px] xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-[10px] xl:grid-cols-2">
           {list.map((feature, index) => {
             // destructure feature
             const {
               image,
-              bgImage,
+
               title,
               description,
               linkText,
-              delay,
-              digit,
             } = feature;
             // feature item
             return (
               <div
                 key={index}
-                className="w-90%  h-[108px] flex  items-center  flex-nowrap justify-start mx-auto"
+                className="w-full px-4  h-[108px] flex gap-5  items-center bg-[#f9fafb] flex-nowrap justify-start "
                 // data-aos="zoom-in"
                 // data-aos-offset="100"
                 // data-aos-delay={delay}
               >
                 {/* bg image */}
-                <div className="hidden xl:flex absolute top-0 right-0 -z-10">
+                {/* <div className=" w-[66px] h-[57px] top-0 right-0 -z-10">
                   <img src={bgImage} />
-                </div>
+                </div> */}
 
                 {/* icon image */}
                 <div
-                  className="w-[120px] h[100%] bg-contain h xl:mr-7 xl:max-w-[32px]"
-                  data-aos="zoom-in-right"
-                  data-aos-delay={delay}
+                  className="w-[66px] h-[57px]"
                 >
-                  <img src={image} />
+                  <img src={image}  className='min-w-full' alt="" />
                 </div>
                 {/* text */}
                 <div className="w-[250px]">
-                  <h3 className="h4 mb-2 font-bold flex flex-nowrap ">{title}</h3>
-                  <p className="font-light italic mb-2 flex-nowrap">{description}</p>
+                  <h3 className="text-[14px] mb-2 font-semibold flex flex-nowrap ">{title}</h3>
+                  <p className="font-light text-[12px] italic mb-2 flex-nowrap">{description}</p>
                   {/* link & arrow */}
-                 <div className="flex  gap-9 items-center">
+                 <div className="flex  gap-2 items-center">
                   <div class="h-1 bg-black-400  rounded ">
                     <div class="w-24 h-full bg-green-500"></div>
                   </div>
                   <div className="flex items-center">
-                    <a className="text-primary font-bold" href="#">
+                    <span className="text-primary font-bold text-[8px]">
                       {linkText}
-                    </a>
+                    </span>
 
                   </div>
 
