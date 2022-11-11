@@ -9,7 +9,7 @@ const Testimonials = () => {
       <div className='container  mx-auto'>
         <div
           data-aos='fade-up'
-          data-aos-offset='300'
+          data-aos-offset='100'
         >
           <div className='flex flex-start mt-4  text-center items-center'>
 
